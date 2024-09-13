@@ -9,21 +9,51 @@ body {
   backdrop-filter: blur(2px);
 }
 
-body::before {
-    content: "";
-    position:absolute;
-    width:100%;
-    height:100dvh;
-    background:rgb(0, 0, 0, 0.1);
-    
+a {
+    color: chocolate;
 }
 
 .div-container {
-  font-family: "Varela Round", sans-serif;
-  background: white;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 30px 58px rgba(65, 58, 100, 0.08);
+    font-family: "Varela Round", sans-serif;
+    background: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 30px 58px rgba(65, 58, 100, 0.08);
+}
+
+header {
+    border-bottom: 1px solid #f9f7fe;
+    padding: 30px 0;
+}
+.search-form-input {
+  background-color: #f9f7fe;  
+  font-size: 16px;
+  width:80%;
+  padding:15px 20px;
+  border: none;
+  border-radius: 6px;
+}
+
+.search-form-btn {
+  background-color: chocolate;  
+  font-size: 16px;
+  color:white;
+  padding:15px 30px;
+  border:none;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+
+.weather-summary-container {
+  display: flex;
+}
+
+footer {
+    color: rgba(0,0,0, 0.6);
+    font-size: 13px;
+    text-align: center;
+    border-top: 1px solid #f9f7fe;
+    padding: 30px 0 0 0;
 }
