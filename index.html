@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Meraki's Forecast | V.2</title>
 </head>
 
@@ -25,8 +26,9 @@
                     <p>Thursday 6:00 AM, Clear<br>Humidity: 43%,
                         Wind: 10 mph</p>
                 </div>
-                
-                <div>☀️ 62°F</div>
+                <div class="weather-icon">☀️</div>
+                <div id="temperature">62</div>
+                <div class="temp-unit">°F</div>
             </div>
             
         </main>
