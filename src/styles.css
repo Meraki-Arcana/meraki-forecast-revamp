@@ -32,7 +32,7 @@ a {
   font-size: 30px;
     background: linear-gradient(to bottom, rgba(131, 117, 97, 0.15), rgba(247, 224, 198, 0.507));
     max-width: 800px;
-    height: 400px;
+    height: 460px;
     margin: 0 auto;
     padding: 30px;
     border: 1px solid;
@@ -40,6 +40,28 @@ a {
     border-radius: 12px;
     box-shadow: 0 30px 58px rgba(65, 58, 100, 0.08);
     backdrop-filter: blur(15px);
+}
+
+.weather-summary-container {
+  display: flex;
+}
+
+.weather-icon {
+font-size: 60px;
+margin-left: 50px;
+}
+
+.temperature {
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+.temp-unit {
+  font-size: 30px;
+  margin-top: 13px;
+  margin-left:5px;
 }
 
 header {
@@ -71,7 +93,7 @@ header {
 
 footer {
     color: rgba(0,0,0, 0.6);
-    font-size: 13px;
+    font-size: 16px;
     text-align: center;
     border-top: 1px solid #f9f7fe;
     padding: 30px 0;
