@@ -14,7 +14,8 @@
     <div class="div-container">
         <header>
             <form class="search-form" id="search-form">
-                <input class="search-form-input" id="search-form-input" type="search" placeholder="Enter a city..." minlength="4" maxlength="10">
+                <input class="search-form-input" id="search-form-input" type="search" placeholder="Enter a city..."
+                    minlength="4" maxlength="24">
                 <input class="search-form-btn" type="submit" value="Search">
             </form>
         </header>
@@ -25,15 +26,16 @@
                 <div class="weather-details">
                     <h1 class="city-name" id="city-name">Denver</h1>
                     <br>
-                    <p>Thursday 6:00 AM, Clear<br>Humidity: 43%,
-                        Wind: 10 mph</p>
+                    <p><strong><span id="current-time"></span></strong> <span class="temperature-condition"
+                            id="temperature-condition"></span><br>Humidity: <strong id="humidity"></strong>,
+                        Wind: <strong id="wind-speed"></strong><strong>mph</strong></p>
                 </div>
 
                 <div class="weather-icon">⛅</div>
                 <div class="temperature" id="temperature"></div>
                 <div class="temp-unit">°F</div>
             </div>
-            
+
         </main>
         <footer>This project was coded by <a href="https://github.com/Meraki-Arcana">Meraki Arcana,</a> is<a
                 href="https://github.com/Meraki-Arcana/meraki-forecast-revamp"> open-sourced on GitHub</a> and <a
