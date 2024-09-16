@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Meraki's Forecast | V.2</title>
 </head>
@@ -27,11 +31,15 @@
                     <h1 class="city-name" id="city-name">Denver</h1>
                     <br>
                     <p><strong><span id="current-time"></span></strong> <span class="temperature-condition"
-                            id="temperature-condition"></span><br>Humidity: <strong id="humidity"></strong>,
+                            id="temperature-condition"></span><br><span class="material-symbols-outlined">
+                                water_drop
+                            </span>Humidity: <strong id="humidity"></strong>, <span class="material-symbols-outlined">
+                                air
+                            </span>
                         Wind: <strong id="wind-speed"></strong><strong>mph</strong></p>
                 </div>
 
-                <div class="weather-icon">⛅</div>
+                <div class="weather-icon" id="weather-icon"></div>
                 <div class="temperature" id="temperature"></div>
                 <div class="temp-unit">°F</div>
             </div>

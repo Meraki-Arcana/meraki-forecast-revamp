@@ -18,6 +18,10 @@ function displayWeatherData(response) {
   currentTime = document.querySelector("#current-time");
   let date = new Date(response.data.time * 1000);
   currentTime.innerHTML = formatDate(date)
+
+  let weatherIcon = document.querySelector("#weather-icon")
+  
+  weatherIcon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon">`;
 }
 
 function formatDate(date) {
