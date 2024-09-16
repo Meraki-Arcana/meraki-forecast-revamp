@@ -8,6 +8,7 @@
 }
 
 body {
+  margin-top:10px;
   background: url("fall-forest.jpg");
   width:100%;
   height:100dvh;
@@ -24,17 +25,18 @@ body::before {
   backdrop-filter: blur(2px);
 }
 
+
 a {
-    color: chocolate;
+    color: rgb(23, 100, 33);
 }
 
 .div-container {
   font-size: 30px;
     background: linear-gradient(to bottom, rgba(131, 117, 97, 0.15), rgba(247, 224, 198, 0.507));
     max-width: 800px;
-    height: 580px;
+    height: 820px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 50px;
     border: 1px solid;
     border-color: rgb(107, 112, 96);
     border-radius: 12px;
@@ -92,9 +94,40 @@ header {
   display: flex;
 }
 
+.weather-forecast-container {
+  font-size: 18px;
+  display:flex;
+  justify-content: space-around;
+  margin-top:30px;
+}
+
+.day-of-week {
+  text-align: center;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 10px ;
+}
+
+.forecast-icon {
+  text-align: center;
+  font-size: 38px;
+}
+
+.forecast-temperatures{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  color:rgb(23, 100, 33);
+}
+
+.high-low-temp {
+  padding: 0 10px;
+}
+
 footer {
     color: rgba(0,0,0, 0.6);
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     margin-top: 30px;
     border-top: 1px solid #f9f7fe;
