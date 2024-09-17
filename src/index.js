@@ -22,6 +22,8 @@ function displayWeatherData(response) {
   let weatherIcon = document.querySelector("#weather-icon");
 
   weatherIcon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon">`;
+
+  retrieveForecastData(response.data.city);
 }
 
 function formatDate(date) {
@@ -66,8 +68,16 @@ function searchInquiry(event) {
   searchingForCity(searchInput.value);
 }
 
-function displayForecast() {
-  
+
+function retrieveForecastData(city) {
+  let apiKey = "97ebcf39f3b8605d5a644of06ft2846e";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios(apiUrl).then(displayForecast)
+}
+
+function displayForecast(response) {
+  console.log(response.data)
+
   let days = ['Tues', 'Wed', 'Thurs', 'Fri', 'Sat']
   let forecastHtml = ""
   
@@ -94,6 +104,6 @@ let searchformElement = document.querySelector("#search-form");
 searchformElement.addEventListener("submit", searchInquiry);
 
 searchingForCity("Monument");
-displayForecast();
+
 
 
